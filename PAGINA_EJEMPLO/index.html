@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación del Curso de CSS | Ejemplos Prácticos</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- Header Principal -->
+    <header class="doc-header">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">🎨</span>
+                <div class="logo-text">
+                    <h1>Documentación CSS</h1>
+                    <span class="subtitle">Guía de Ejemplos del Curso</span>
+                </div>
+            </div>
+            <div class="header-badges">
+                <span class="badge badge-html">HTML5</span>
+                <span class="badge badge-css">CSS3</span>
+                <span class="badge badge-flex">Flexbox</span>
+                <span class="badge badge-grid">CSS Grid</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Layout Principal: Sidebar + Contenido -->
+    <div class="doc-layout">
+
+        <!-- Navegación Lateral (Sidebar) -->
+        <aside class="doc-sidebar">
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <span class="nav-title">CONTENIDO DEL CURSO</span>
+                    <ul>
+                        <li><a href="#introduccion" class="nav-link active">📖 Introducción</a></li>
+                        <li><a href="#clase-1-2" class="nav-link">🧱 Clase 1 y 2: Maquetación Básica</a></li>
+                        <li><a href="#flexbox" class="nav-link">📦 Clase Flexbox: Layout Flexible</a></li>
+                        <li><a href="#grid" class="nav-link">🏁 Clase Grid: Diseños en Rejilla</a></li>
+                        <li><a href="#resumen" class="nav-link">📊 Resumen Comparativo</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </aside>
+
+        <!-- Área de Contenido Principal -->
+        <main class="doc-content">
+
+            <!-- Sección Introducción -->
+            <section id="introduccion" class="doc-section hero-section">
+                <div class="hero-content">
+                    <h2>Centro de Documentación y Demostración en Vivo</h2>
+                    <p>Explora la teoría, los fragmentos de código y las demostraciones interactivas de cada una de las clases del curso. Cada sección integra visualmente los elementos reales maquetados en las clases prácticos.</p>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-num">3</span>
+                            <span class="stat-label">Módulos Prácticos</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">HTML5 + CSS3 Puro</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-num">3</span>
+                            <span class="stat-label">Sistemas de Maquetación</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECCIÓN 1: CLASE 1 Y 2 -->
+            <section id="clase-1-2" class="doc-section">
+                <div class="section-header">
+                    <span class="section-tag">Módulo 1</span>
+                    <h2>Clase 1 y 2: Maquetación Tradicional (Floats y HTML Semántico)</h2>
+                    <p>Aprende cómo estructurar un sitio web completo usando etiquetas semánticas de HTML5 (`header`, `nav`, `section`, `article`, `aside`, `footer`) y la técnica de maquetación clásica basada en `float` y `clearfix`.</p>
+                </div>
+
+                <!-- Tarjetas de Conceptos Teóricos -->
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <div class="concept-icon">📐</div>
+                        <h3>Estructura Semántica</h3>
+                        <p>Uso de contenedor fijo de <code>1100px</code> centrado con <code>margin: 0 auto</code>, organizando bloques lógicos de contenido.</p>
+                    </div>
+                    <div class="concept-card">
+                        <div class="concept-icon">🔀</div>
+                        <h3>Propiedad Float</h3>
+                        <p>Alineación lateral mediante <code>float: left</code> y cálculo dinámico de anchos con <code>calc(80% - 80px)</code> y <code>calc(20% - 20px)</code>.</p>
+                    </div>
+                    <div class="concept-card">
+                        <div class="concept-icon">🧹</div>
+                        <h3>El Limpiador Clearfix</h3>
+                        <p>Uso de la clase <code>.clearfix { clear: both; }</code> para restaurar el flujo normal del documento tras elementos flotados.</p>
+                    </div>
+                </div>
+
+                <!-- Ventana de Demostración en Vivo -->
+                <div class="preview-box">
+                    <div class="preview-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">Demostración en Vivo: Ejemplo Clase 1 y 2</span>
+                        <span class="window-badge">float-layout.html</span>
+                    </div>
+                    <div class="preview-body demo-clase12-wrapper">
+                        <!-- ELEMENTOS REALES DE LA CLASE 1 Y 2 -->
+                        <div id="container">
+                            <header class="c12-header">
+                                <h1>CSS con Victor Robles</h1>
+                            </header>
+
+                            <nav class="c12-nav">
+                                <ul>
+                                    <li><a href="#clase-1-2">Inicio</a></li>
+                                    <li><a href="#clase-1-2">Pagina 1</a></li>
+                                    <li><a href="#clase-1-2">Pagina 2</a></li>
+                                    <li><a href="#clase-1-2">Blog</a></li>
+                                    <li><a href="#clase-1-2">Contacto</a></li>
+                                </ul>
+                            </nav>
+
+                            <section id="content">
+                                <article class="article">
+                                    <h2>Titulo del articulo 1</h2>
+                                    <p>Texto del articulo estructurado con HTML semántico.</p>
+                                </article>
+
+                                <article class="article">
+                                    <h2>Titulo del articulo 2</h2>
+                                    <p>Texto del articulo demostrando márgenes y bordes inferiores.</p>
+                                </article>
+
+                                <article class="article">
+                                    <h2>Titulo del articulo 3</h2>
+                                    <p>Texto del articulo dentro de la sección principal verde.</p>
+                                </article>
+
+                                <article class="article">
+                                    <h2>Titulo del articulo 4</h2>
+                                    <p>Texto del articulo final en el flujo de contenido.</p>
+                                </article>
+                            </section>
+
+                            <aside class="c12-aside">
+                                <h2>Barra lateral</h2>
+                                <form onsubmit="return false;">
+                                    <input type="text" placeholder="Buscar...">
+                                    <input type="submit" value="Buscar">
+                                </form>
+                            </aside>
+
+                            <div class="clearfix"></div>
+
+                            <footer class="c12-footer">
+                                <p>Victor Robles Web</p>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque de Código de Referencia -->
+                <div class="code-block-container">
+                    <div class="code-header">
+                        <span>📄 Estilos Clave empleados (estilos.css)</span>
+                    </div>
+                    <pre class="code-block"><code>/* Estructura del contenedor principal */
+#container {
+    width: 1100px;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+/* Distribución con Float y Calc */
+#content {
+    float: left;
+    width: calc(80% - 80px);
+    min-height: 500px;
+    background-color: green;
+    padding: 40px;
+}
+
+aside {
+    float: left;
+    width: calc(20% - 20px);
+    background-color: orange;
+    min-height: 500px;
+    padding: 20px 10px 0 10px;
+}
+
+.clearfix {
+    clear: both;
+}</code></pre>
+                </div>
+            </section>
+
+
+            <!-- SECCIÓN 2: FLEXBOX -->
+            <section id="flexbox" class="doc-section">
+                <div class="section-header">
+                    <span class="section-tag">Módulo 2</span>
+                    <h2>Clase Flexbox: Layouts Modulares y Flexibles</h2>
+                    <p>Flexbox (Flexible Box Layout Module) permite diseñar estructuras unidimensionales dinámicas, distribuyendo el espacio entre elementos y alineándolos eficazmente.</p>
+                </div>
+
+                <!-- Tarjetas de Conceptos Teóricos -->
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <div class="concept-icon">↔️</div>
+                        <h3>Dirección y Envoltura</h3>
+                        <p>Propiedades <code>display: flex</code>, <code>flex-direction: row</code> y <code>flex-wrap: wrap</code> combinadas en <code>flex-flow: row wrap</code>.</p>
+                    </div>
+                    <div class="concept-card">
+                        <div class="concept-icon">📈</div>
+                        <h3>Flex Grow & Basis</h3>
+                        <p>Control de proporciones mediante <code>flex-grow</code> y tamaño inicial relativo mediante <code>flex-basis: 50%</code>.</p>
+                    </div>
+                    <div class="concept-card">
+                        <div class="concept-icon">🔢</div>
+                        <h3>Propiedad Order</h3>
+                        <p>Reordenamiento visual independientemente del orden de los elementos en el marcado HTML mediante <code>order: 1..4</code>.</p>
+                    </div>
+                </div>
+
+                <!-- Ventana de Demostración en Vivo -->
+                <div class="preview-box">
+                    <div class="preview-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">Demostración en Vivo: Ejemplo Flexbox</span>
+                        <span class="window-badge">flexbox-demo.html</span>
+                    </div>
+                    <div class="preview-body demo-flexbox-wrapper">
+                        <h1 class="flex-demo-title">Aprendiendo Flexbox con Victor Robles</h1>
+                        
+                        <!-- ELEMENTOS REALES DE FLEXBOX -->
+                        <section class="flex-container">
+                            <div class="caja c1">
+                                caja 1 (grow:5 | basis:50%)
+                            </div>
+                            <div class="caja c2">
+                                caja 2 (grow:2)
+                            </div>
+                            <div class="caja c3">
+                                caja 3 (grow:3)
+                            </div>
+                            <div class="caja c4">
+                                caja 4 (grow:4)
+                            </div>
+                        </section>
+                    </div>
+                </div>
+
+                <!-- Bloque de Código de Referencia -->
+                <div class="code-block-container">
+                    <div class="code-header">
+                        <span>📄 Reglas CSS de Flexbox empleadas</span>
+                    </div>
+                    <pre class="code-block"><code>/* Contenedor Flex */
+.flex-container {
+    display: flex;
+    border: 1px solid rgb(70, 69, 69);
+    background: #ccc;
+    padding: 20px;
+    flex-flow: row wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+/* Hijos flexibles con propiedades individuales */
+.c1 { background-color: lightblue;  order: 1; flex-grow: 5; flex-basis: 50%; }
+.c2 { background-color: lightcoral; order: 2; flex-grow: 2; }
+.c3 { background-color: lightgreen; order: 3; flex-grow: 3; }
+.c4 { background-color: lightgoldenrodyellow; order: 4; flex-grow: 4; }</code></pre>
+                </div>
+            </section>
+
+
+            <!-- SECCIÓN 3: CSS GRID -->
+            <section id="grid" class="doc-section">
+                <div class="section-header">
+                    <span class="section-tag">Módulo 3</span>
+                    <h2>Clase Grid: Diseños Bidimensionales en Rejilla</h2>
+                    <p>CSS Grid Layout es el sistema de maquetación bidimensional más potente de CSS, permitiendo ubicar elementos en filas y columnas simultáneamente con máxima precisión.</p>
+                </div>
+
+                <!-- Tarjetas de Conceptos Teóricos -->
+                <div class="concepts-grid">
+                    <div class="concept-card">
+                        <div class="concept-icon">🏁</div>
+                        <h3>Grid Columns & Rows</h3>
+                        <p>Definición de plantilla con <code>grid-template-columns: auto auto</code> y alturas <code>grid-template-rows: 100px auto</code>.</p>
+                    </div>
+                    <div class="concept-card">
+                        <div class="concept-icon">📐</div>
+                        <h3>Grid Area & Spanning</h3>
+                        <p>Posicionamiento explicito mediante <code>grid-column: 1/4</code>, expansiones <code>span 3</code> y la regla atajo <code>grid-area</code>.</p>
+                    </div>
+                    <div class="concept-card">
+                        <div class="concept-icon">🎯</div>
+                        <h3>Alineación Stretch</h3>
+                        <p>Distribución de ítems aprovechando el ancho disponible con <code>justify-content: stretch</code>.</p>
+                    </div>
+                </div>
+
+                <!-- Ventana de Demostración en Vivo -->
+                <div class="preview-box">
+                    <div class="preview-header">
+                        <div class="window-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="window-title">Demostración en Vivo: Ejemplo CSS Grid</span>
+                        <span class="window-badge">grid-demo.html</span>
+                    </div>
+                    <div class="preview-body demo-grid-wrapper">
+                        <h1 class="grid-demo-title">Aprendiendo Grid</h1>
+
+                        <!-- ELEMENTOS REALES DE GRID -->
+                        <div class="grid-layout">
+                            <div class="caja caja1">
+                                caja1 (grid-area: 1/1/3/4)
+                            </div>
+                            <div class="caja caja2">
+                                caja2 (span 1/3)
+                            </div>
+                            <div class="caja caja3">
+                                caja3 (span 1/4)
+                            </div>
+                            <div class="caja caja4">
+                                caja4 (span 3)
+                            </div>
+                            <div class="caja caja5">
+                                caja5
+                            </div>
+                            <div class="caja caja6">
+                                caja6
+                            </div>
+                            <div class="caja caja7">
+                                caja7
+                            </div>
+                            <div class="caja caja8">
+                                caja8
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bloque de Código de Referencia -->
+                <div class="code-block-container">
+                    <div class="code-header">
+                        <span>📄 Reglas CSS de Rejilla empleadas</span>
+                    </div>
+                    <pre class="code-block"><code>/* Contenedor Grid Principal */
+.grid-layout {
+    width: 80%;
+    margin: 0 auto;
+    background-color: lightgreen;
+    padding: 20px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px auto;
+    justify-content: stretch;
+}
+
+/* Áreas y columnas asignadas a las cajas */
+.caja1 { grid-column: 1/4; background-color: lightblue; grid-area: 1 / 1 / 3 / 4; }
+.caja2 { grid-column: 1/3; }
+.caja3 { grid-column: 1/4; }
+.caja4 { grid-column: 3 / span 3; }</code></pre>
+                </div>
+            </section>
+
+
+            <!-- SECCIÓN 4: RESUMEN COMPARATIVO -->
+            <section id="resumen" class="doc-section">
+                <div class="section-header">
+                    <span class="section-tag">Resumen</span>
+                    <h2>Matriz Comparativa de Métodos de Maquetación</h2>
+                    <p>Compara fácilmente cuándo utilizar cada técnica aprendida en las lecciones del curso.</p>
+                </div>
+
+                <div class="table-container">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Técnica</th>
+                                <th>Dimensiones</th>
+                                <th>Casos de Uso Ideales</th>
+                                <th>Ventaja Principal</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="badge badge-html">Floats & Posicionamiento</span></td>
+                                <td>1D (Horizontal básico)</td>
+                                <td>Sitios legacy, envolvimiento de texto alrededor de imágenes, columnas sencillas.</td>
+                                <td>Soporte total en navegadores antiguos sin requerir sintaxis moderna.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-flex">Flexbox</span></td>
+                                <td>1D (Fila o Columna)</td>
+                                <td>Menús de navegación, barras de herramientas, centrado de elementos, tarjetas dinámicas.</td>
+                                <td>Excelente distribución de espacio libre y alineación vertical/horizontal rápida.</td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge badge-grid">CSS Grid Layout</span></td>
+                                <td>2D (Filas y Columnas)</td>
+                                <td>Layouts de páginas completas, galerías complejas, paneles de control (dashboards).</td>
+                                <td>Control total sobre filas y columnas simultáneamente sin depender de anidaduras de contenedores.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+</body>
+</html>
